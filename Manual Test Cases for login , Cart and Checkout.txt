@@ -1,0 +1,121 @@
+							Test Cases – Login Page
+
+Sr.No.			Functional Test Cases												Type- Negative/ Positive Test Case
+	
+1	Verify if a user will be able to login with a valid username and valid password.							Positive
+2	Verify if a user cannot login with a valid username and an invalid password.								Negative
+3	Verify the login page for both, when the field is blank and Submit button is clicked.							Negative
+4	Verify the ‘Forgot Password’ functionality.												Positive
+5	Verify the messages for invalid login.													Positive
+6	Verify the ‘Remember Me’ functionality.													Positive
+7	Verify if the data in password field is either visible as asterisk or bullet signs.							Positive
+8	Verify if a user is able to login with a new password only after he/she has changed the password.					Positive
+9	Verify if the login page allows to log in simultaneously with different credentials in a different browser.				Positive
+10	Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.							Positive
+
+					Other Test Cases
+
+11	Verify the time taken to log in with a valid username and password.									Performance & Positive Testing
+12	Verify if the font, text color, and color coding of the Login page is as per the standard.						UI Testing & Positive Testing
+13	Verify if there is a ‘Cancel’ button available to erase the entered text.								Usability Testing
+14	Verify the login page and all its controls in different browsers									Browser Compatibility & Positive Testing
+
+		 Non-functional Security Test Cases
+Sr.No.	             Security test cases	  												Type- Negative/ Positive Test Case
+
+1	Verify if a user cannot enter the characters more than the specified range in each field (Username and Password).				Negative
+2	Verify if a user cannot enter the characters more than the specified range in each field (Username and Password).				Positive
+3	Verify the login page by pressing ‘Back button’ of the browser. It should not allow you to enter into the system once you log out.		Negative
+4	Verify the timeout functionality of the login session.												Positive
+5	Verify if a user should not be allowed to log in with different credentials from the same browser at the same time.				Negative
+6	Verify if a user should be able to login with the same credentials in different browsers at the same time.					Positive
+7	Verify the Login page against SQL injection attack.												Negative
+8	Verify the implementation of SSL certificate.													Positive
+
+
+						Test Cases For Add To Cart and Checkout
+
+		   Functional test cases for Shopping Cart
+
+1.  Check whether the Shopping Cart button is seen on the product display page.
+2.  Check whether the quantity of the product increases when Adding one item to the cart.
+3.  Check whether the quality is increased when adding the same item to the cart.
+4.  Check whether the quantity is decreased when removing some items from the cart.
+5.  Check whether the user can remove all items from the cart, the cart should be displayed as empty
+6.  Check whether the count of the cart getting changing or not when the user adds an item to the cart.
+7.  Check whether the page redirects to the product detail page when clicking on the product in the shopping cart.
+8.  Check whether the user is redirected to the checkout page after clicking on the checkout button.
+9.  Check whether the total price is added when the product is added to the cart.
+10. Check whether the total price reduces when the product is removed from the cart.
+11. Check whether the products in the shopping cart remain the same even when the user closes the browser page and reopens it.
+12. Check whether the user can access the Checkout Page only after adding the product to the cart.
+13. Check the cart total when the admin implements exclusive tax.
+14. Check whether only registered users are allowed to access the Checkout Address Page.
+15. Check whether a Back to cart link redirects the user back to the shopping cart page.
+16. Check whether the Checkout payment page is seen only after entering valid mandatory details on the checkout Address page.
+17. Check whether a user can apply for a valid coupon.
+18. Check whether the order price changes accordingly when the coupon is applied.
+
+                  Usability test cases for Shopping Cart
+
+1.  Check whether the user can change the number of items from the cart or not.
+2.  Check whether the user can add a text note for all products.
+3.  Check whether the shopping cart holds the items till the session is active.
+4.  Check whether the user can add any or all products to their wishlist.
+5.  Check whether the shopping cart doesn’t contain any duplicate items, even though a user can add quantities of the product to be purchased
+6.  Check whether the user can delete items from the shopping cart and those deleted items should not proceed for further payment.
+7.  Check whether the shopping cart contains the price of the product, its name and a link to the product’s details.
+8.  Check whether the user can add a gift message.
+9.  Check whether the right error message is displayed when the user enters invalid input in all the mandatory fields on the checkout address page.
+10. Check whether a Back-to-cart link is available so that the user can modify the cart content if needed.
+11. Check whether the confirmation message is displayed or not when the user adds any item to the cart successfully.
+12. Check whether all the items added to the cart show in proper sequence.
+13. Check whether the application is calculating the shipping charges, tax, packing price etc as expected.
+14. Check whether the product retains in the shopping when the user opens two tabs, one product details page and one shopping cart page, when the user adds a product from the PDP page, the shopping cart page should get auto refreshed and the new product should appear in the Shopping Cart.
+
+                  User interface test cases for Shopping Cart
+
+1.  Check whether the shopping cart icon is displayed as expected or not.
+2.  Verify whether the shopping cart page UI should be as expected
+3.  Check whether the Add to Cart icon is seen on the product detail page.
+4.  Check whether the other Details of the cart eg. Cart design, label, and buttons are as per requirements.
+5.  Check whether the add to cart button is responsive.
+6.  Check whether the item is added to the cart when clicking on the button.
+7.  Check whether the item added to the cart shows the same item as clicking on add to cart.
+8.  Check whether the quantity button is displayed as expected.
+9.  Check whether the ‘+’ and ‘-‘ button is seen on the shopping cart page.
+10. Check whether the same product is added to the cart along with an increase in the corresponding cost in the total price when clicking on the ‘+’ button.
+11. Check whether the same product is deducted from the cart along with a decrease in the corresponding cost in the total price when clicking on the ‘-‘ button.
+12. Check whether the cart becomes empty when the user clicks on the ‘-‘ button when only a single product is present in the shopping cart.
+13. Check whether the shopping cart page has options for edit, delete, save etc
+14. Check whether the Product Detail Page is shown with all the necessary links and information.
+15. Check whether the Next Button and Cancel Button are available on the Shopping Cart page.
+16. Check whether the add to cart button is seen below the product in the wishlist.
+17. Check whether the user can mark his order as a gift on the shopping cart page.
+18. Check whether the user can add a gift message.
+19. Check whether the user is redirected to the checkout page after clicking on the checkout button.
+20. Check whether the Checkout Address Page consists of all the details of the product such as Name, Quantity, Amount, etc.
+21. Check whether that Proceed button works properly
+
+		  Boundary conditions test cases for Shopping Cart
+
+1.  Check whether the system accepts when editing the least number of items in the cart, quantity of the item in the cart should be one.
+2.  Check whether the system doesn’t accept when editing the number of the item in the cart as zero or negative number.
+3.  Check when the item’s quantity count is greater than its actual inventory count then checkout should not be allowed and an appropriate error should be presented to the user for the same.
+4.  Check whether the user can add maximum number of items into the cart
+5.  Check whether the system accepts a discount coupon with one invalid character.
+6.  Check whether the user can place an order where the total discount is more than the entire order.
+7.  Check whether the user can add an item to the shopping cart when the item is out of stock.
+8.  Check whether the user can click on the ‘+’ button when only 1 item is left in the stock.
+9.  Check whether the user can add the same item to the cart multiple times.
+
+		  Negative test cases for shopping cart
+
+1.  Check whether the user can access the checkout page with any product in the cart.
+2.  Check whether the user can add the product to the cart when the product is out of stock.
+3.  Check whether unregistered users can access the Checkout Address Page.
+4.  Check how the system functions when mandatory fields such as Name, Street Address, City, State, Country, and Postal code are not filled.
+5.  Check whether the website displays how the system functions when the user fills in an invalid coupon.
+6.  Check whether the cart is editable then check that the user can enter floating numbers
+7.  Check whether the user can place an order where the order total price is Zero (0).
+8.  Check how the system acts when editing the quantity of the item in the cart with invalid quantities such as only spaces, negative values, 0, characters, special characters etc.
